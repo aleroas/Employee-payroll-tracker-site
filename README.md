@@ -1,125 +1,49 @@
-# 03 JavaScript: Employee Payroll Tracker
+# Employee Payroll Tracker
 
-## Your Task
+## Description
 
-This week's Challenge requires you to modify starter code to create an application that enables a payroll manager to view and manage employee payroll data. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+Employee Payroll Tracker is a web application designed to assist payroll managers in tracking and managing employee payroll data. The application provides a user-friendly interface for entering employee information, calculating average salaries, and displaying employee data in an organized manner.
 
 ## User Story
 
-```md
-AS A payroll manager
-I WANT AN employee payroll tracker
-SO THAT I can see my employees' payroll data and properly budget for the company
-```
+As a payroll manager, I want an employee payroll tracker so that I can efficiently manage my employees' payroll data and make informed decisions regarding budgeting for the company.
 
-## Acceptance Criteria
+## Features
 
-```md
-GIVEN an employee payroll tracker
-WHEN I click the "Add employee" button
-THEN I am presented with a series of prompts asking for first name, last name, and salary
-WHEN I finish adding an employee
-THEN I am prompted to continue or cancel
-WHEN I choose to continue
-THEN I am prompted to add a new employee
-WHEN I choose to cancel
-THEN my employee data is displayed on the page sorted alphabetically by last name, and the console shows computed and aggregated data
-```
+- **Add Employees**: Click the "Add Employees" button to input employee information, including first name, last name, and salary. Users can continue adding employees or cancel the operation.
+  
+- **Display Employee Data**: The application dynamically generates an HTML table to display the collected employee data. The table is sorted alphabetically by last name for easy reference.
 
-## Mock-Up
-
-The following images show the web application's appearance and functionality:
-
-![Animation shows input of employees to an employee payroll tracker.](./Assets/03-javascript-homework-demo.gif)
-
-![Shows employee information in the console of an employee payroll tracker.](./Assets/03-javascript-homework-console-demo.png)
+- **Calculate Average Salary**: Employee Payroll Tracker calculates and displays the average salary of all entered employees, providing valuable insights into budget planning.
 
 ## Getting Started
 
-You will be responsible for filling out the following functions:
+To run the Employee Payroll Tracker locally:
 
-* `collectEmployees`: This function will allow a user to add multiple employees to display on the page.  The user will need to enter the first name, last name, and salary of each employee, then have the option to keep adding employees until they choose to stop. A `while` loop will be needed here ([MDN Web Docs on `while` loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)) The salary will need to be entered as a number, otherwise it should default to $0.  The `isNaN` function can help with this: ([MDN Web Docs on isNaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN)) This function should return an array of objects, like the following example.  Reference the [MDN Web Docs on return](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return):
+1. Clone this repository to your local machine using `git clone https://github.com/your-username/employee-payroll-tracker.git`
+2. Navigate to the project directory.
+3. Open the `index.html` file in your web browser.
 
-```javascript
-    [
-        {
-            firstName:"John",
-            lastName:"Smith",
-            salary:12345
-        },
-        {
-            firstName:"Jane",
-            lastName:"Doe",
-            salary:54321
-        }
-    ]
-```
+## Usage
 
-* `displayAverageSalary`: This function will take in the generated array of employees and log the average salary and number of employees to the console.  You should use a template literal string for this task.
+1. Click the "Add Employees" button to start entering employee data.
+2. Enter the first name, last name, and salary for each employee as prompted.
+3. Choose to continue adding employees or cancel the operation.
+4. Once all employees are added, the application will display their information in a table format.
+5. The average salary of all employees will be calculated and displayed in the console.
 
-* `getRandomEmployee`: This function will take in the generated array of employees, randomly select one employee, and use a template literal to log their full name to the console.  The built in `Math` object can help with random number generation: ([MDN Web Docs on `Math.random`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random))
+## Technologies Used
 
-The provided starter code includes the `displayEmployees` and `trackEmployeeData` functions. These functions are complete and working. You do not have to modify any code for the following functions:
+- HTML
+- CSS
+- JavaScript
 
-* `displayEmployees`: This function will take in an array of employees and render each employee to an HTML table.
+## Screenshot & Screenrecord 
 
-* `trackEmployeeData`: This function will execute when the "Add Employees" button is clicked. It will take the array generated in your `collectEmployees` function, sort the employees by last name, and place them on a table on the page using the provided `displayEmployees` function.  Additionally, the function will execute the `displayAverageSalary` function to log the average employee salary to the console, and execute the `getRandomEmployee` function to log a random employees information to the console.
 
-## Grading Requirements
+![Screen Shot 2024-04-02 at 9 08 56 PM](https://github.com/aleroas/Employee-payroll-tracker-site/assets/159299095/57768d16-feb0-4c57-a1f1-a73489adb41b)
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+https://github.com/aleroas/Employee-payroll-tracker-site/assets/159299095/ef7d4a8d-b655-4184-b261-474e426b0036
 
-This Challenge is graded based on the following criteria:
 
-### Technical Acceptance Criteria: 40%
 
-* Satisfies all of the preceding acceptance criteria.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
