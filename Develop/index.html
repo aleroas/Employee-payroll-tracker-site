@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Employee Payroll Tracker</title>
+  <!-- The link to the exteranl CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Employee Payroll Tracker</h1>
+    </header>
+    <!-- Card section for displaying the roster -->
+    <div class="card">
+      <div class="card-header">
+        <!-- The title for the roster -->
+       <h2>Employee Roster</h2>
+      </div>
+      <div class="card-body">
+        <!-- Table to dsiplay employee data -->
+       <table>
+        <thead>
+          <tr>
+            <!-- The code below shows thw table headers -->
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Salary</th>
+          </tr>
+        </thead>
+        <tbody id="employee-table">
+          <!-- Employee data will be populated dynamically here -->
+        </tbody>
+       </table>
+      </div>
+      <div class="card-footer">
+        <!-- The code below shows the button to add employees -->
+        <button id="add-employees-btn" class="btn">Add Employees</button>
+      </div>
+    </div>
+  </div>
+  <!-- The code below links to the external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+
+</html>
